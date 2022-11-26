@@ -1,3 +1,4 @@
+import 'package:demojomjai/widgets/drawer_menu.dart';
 import 'package:flutter/material.dart';
 
 class WidgetDashboardTablet extends StatelessWidget {
@@ -5,6 +6,10 @@ class WidgetDashboardTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('Show Website on Tablet');
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: DrawerMenu(),
+      body: Text('Show Website on Tablet'),
+    );
   }
 }
